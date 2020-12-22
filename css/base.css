@@ -1,0 +1,255 @@
+﻿@charset "utf-8";
+
+/*----------------------------------------------------------------
+
+layout Set
+
+----------------------------------------------------------------*/
+
+/* Header
+----------------------------------------------- */
+header {
+width: 100%;
+z-index: 1000;
+background: url(../images/contents/img_main_bg_sp.jpg) no-repeat center top;
+background-size: 100% ;
+}
+header h1 {
+font-size: 1.5em;
+padding: 2em 1em;
+}
+header span{display: inline-block;}
+
+/* END Header
+----------------------------------------------- */
+
+
+/* ヘッドライン */
+#headline {
+width: 100%;
+margin: 0 auto;
+text-align : center;
+}
+#read {
+width: 94%;
+margin: 0 auto 0;
+padding-bottom: 1em;
+text-align : center;
+}
+
+/* コンテンツ枠 */
+#contents {
+width : 100%;
+margin : 0 auto;
+}
+
+/* メインコンテンツ */
+section{
+width : 100%;
+margin : 0 auto;
+}
+.inner{
+width: 94%;
+margin: 0 auto;
+}
+
+#feature p{
+margin: 30px 0;
+}
+#case{
+background: url(../images/contents/img_case_bg.jpg) no-repeat center top;
+background-size: 100%;
+margin-top: 0;
+padding: 20px 0;
+}
+#case h3{
+margin: 0.5em 0 1.5em;
+}
+#case .box{
+background: rgba(255, 255, 255, 0.8);
+padding: 1em 4%;
+border: 1px solid #eee;
+margin-bottom: 1.5em;
+}
+#footerprof{
+background: url(../images/common/bg.png) repeat;
+margin-top: 0;
+padding: 40px 0;
+}
+
+/* フッター */
+#pagetop{
+position: fixed;
+bottom: 10px;
+right: 10px;
+}
+#pagetop img{
+width: 50px;
+}
+footer {
+padding : 30px 0 30px;
+margin: 0 0 0;
+background: #1d2f53;
+color: #fff;
+line-height: 1.5;
+overflow: hidden;
+}
+footer .inner {
+width: 90%;
+margin: 0 auto;
+}
+footer a {color: #fff; text-decoration: none;}
+footer a:visited { color: #fff; }
+footer a:hover { color: #fff; text-decoration: underline;}
+
+#footernav {
+}
+#footernav li {
+}
+#footernav li::before {
+font-family: "fontawesome";
+content: '\f0da';
+margin-right: 0.5em;
+}
+
+footer .copy {
+text-align: center;
+margin: 2em 0 0;
+}
+
+/* フォーム */
+.optin{
+text-align: center;
+margin: 30px auto 0;
+}
+.optin .submit{
+text-align: center;
+margin: 2em auto 4em;
+}
+
+/*----------------------------------------------------------------
+
+Media Queries
+
+----------------------------------------------------------------*/
+/* 768px～ メディアクエリ開始 */
+@media screen and (min-width : 768px) {
+/* ヘッダー */
+header {
+text-align: left;
+margin: 0;
+background: url(../images/contents/img_main_bg.jpg) no-repeat center top;
+background-size: cover;
+}
+header h1 {
+padding: 3em 2em;
+}
+
+/* ヘッダー（見出し・画像）枠 */
+#headline {
+width: 100%;
+margin: 0 auto;
+text-align : center;
+}
+#read {
+padding-bottom: 0;
+}
+
+/* メインコンテンツ */
+#contents {
+width: 100%;
+font-size: 1.2em;
+}
+#main {
+margin: 0 auto;
+}
+section{
+}
+section p{
+}
+#feature p{
+margin: 50px 0;
+}
+#case{
+margin-top: 50px;
+padding: 30px 0;
+}
+#case h3{
+margin: 0.2em 2em 1.2em;
+}
+.optin .submit{
+text-align: center;
+margin: 2em 8% 4em;
+}
+
+#footernav {
+float: left;
+}
+#footernav li {
+display: inline;
+}
+#footernav li::before {
+content: none;
+}
+#footernav li::after {
+content: "　|　";
+}
+footer .copy {
+float: right;
+margin: 0;
+}
+
+
+.optin .txt{
+font-size: 1.3em;
+}
+
+}
+/* 980px～ メディアクエリ開始 */
+@media screen and (min-width : 980px) {
+header {
+}
+header h1 {
+padding: 4em 2em;
+}
+
+/* メインコンテンツ内部 */
+.inner{
+width: 900px;
+margin: 0 auto;
+}
+.inner.w980{
+width: 980px;
+margin: 0 auto;
+}
+
+#feature p{
+margin: 100px 0;
+}
+
+#case {
+margin-top: 100px;
+}
+#case h3{
+margin: 1em 2em 2em;
+}
+
+.optin .submit{
+text-align: center;
+margin: 3em auto 5em;
+}
+
+/* フッター */
+#pagetop{
+bottom: 20px;
+right: 20px;
+}
+footer {
+padding : 40px 0 40px;
+}
+footer .inner {
+width: 90%;
+margin: 0 auto;
+}
+
+} /* 1024px～ メディアクエリ終了 */
